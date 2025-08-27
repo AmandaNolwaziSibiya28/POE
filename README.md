@@ -11,6 +11,7 @@ Key Features and Functinality
 We believe that we can control what can be measured. To ensure that our company and website continue to grow and satisfy the demands of our clients, we maintain a careful eye on important performance indicators including website traffic, conversion rates, and customer happiness. These metrics let us assess how well we are informing our audience, communicating with them, and, hopefully, achieving our goals. By leveraging this data to guide our decision-making, we can enhance user experience, build our brand, and empower more people to wear their crowns with confidence.
 
 Refencing List 
+
     BeautyVibes, 2023. Beauty from Within – Strengthens from the inside out. [image online]. Available at: [Accessed 20 August 2025].
     The IIE, 2025. Introduction to mobile application and development [IMAD5112 Module Manual]. The Independent Institute of Education: Unpublished.
     w3Schools.(n.d).HTML.Background Colour.Avaliable at: W3School,< https://www.w3schools.com/html/html_styles.asp > [Accessed 26 August 2025]
