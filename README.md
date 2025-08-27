@@ -22,9 +22,14 @@ Refencing List
     HAUS LABS, 2022.#HausLabs#branch launch event [TikTok]. 11 June. Available at: [Accessed 21 August 2025]
     <img width="940" height="635" alt="image" src="https://github.com/user-attachments/assets/7d7855f6-c4d3-4886-a11e-b342b2ef34e1" />
     
-Title: Disclosure of AI usage in my Assessment 
-Section within the Assignment in which generative AI was used : Form on the HTML code- Enquiry 
+Title: Disclosure of AI usage in my Assessment
+
+Section within the Assignment in which generative AI was used : Form on the HTML code- Enquiry
+
 Name of the AI used: ChatGPT 
+
 Purpose/intention behind use: Sourcing ideas for code structure
+
 Date: 27 August 2025
+
 Screenshot and link provided above. 
