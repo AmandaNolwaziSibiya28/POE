@@ -92,6 +92,16 @@ Week Task
 5 Collect from Feedback and start adding images , videos and Goggle Map 
 6Final launch and submission 
 
+## Screenshots
+Screenshot of media queries screen(Mobile Application)
+![alt text](./screenshot/Media%20queries-%20Mobile%20Applicaton.png)
+
+## Screenshots
+Screenshot of media queries screen (Laptop/Desktop)
+![alt text](./screenshot/Media%20queries-\(Desktop/) 
+
+
+
 
 
 
