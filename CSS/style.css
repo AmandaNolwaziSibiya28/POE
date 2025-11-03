@@ -5,6 +5,10 @@ body {
   color: #333;
   overflow-x: hidden;
 }
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
 
 /* ===== Transparent Navigation Bar ===== */
 .navbar {
