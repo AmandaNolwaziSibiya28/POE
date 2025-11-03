@@ -4,8 +4,8 @@
   <title>Enquiry | CrownedByAmanda</title>
   <link href="CSS/style.css" rel="stylesheet" type="text/css" />
   <script>
-    // ===== FORM VALIDATION =====
-    function validateForm(event) {
+    //FORM VALIDATION
+    function validateForm(event) {                                   //(The IIE,2025)
       event.preventDefault(); // prevent form from submitting automatically
 
       let name = document.getElementById('fullName').value.trim();
@@ -20,7 +20,7 @@
       }
 
       // Email validation
-      if (!email.match(emailPattern)) {
+      if (!email.match(emailPattern)) {              //(The IIE,2025)
         alert("Please enter a valid email address.");
         return false;
       }
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-  <!-- ===== NAVIGATION BAR ===== -->
+  <!-- NAVIGATION BAR-->
   <header>
     <nav class="navbar">
       <h1>CrownedByAmanda</h1>
@@ -59,7 +59,7 @@
     </nav>
   </header>
 
-  <!-- ===== ENQUIRY SECTION ===== -->
+  <!-- ENQUIRY SECTION  -->                                 <!--(The IIE,2025)-->
   <section class="contact-section">
     <h1>Please fill in the form below to request more information or book a consultation.</h1>
     <h2>Enquiry Form</h2>
@@ -80,7 +80,7 @@
       <label><input type="checkbox" name="Service" value="Workshop/Live Events"> Workshop / Live Events</label><br>
       <label><input type="checkbox" name="Service" value="Motivational Speeches"> Motivational Speeches</label><br><br>
 
-      <label for="preference">Preferred Contact Method:</label><br>
+      <label for="preference">Preferred Contact Method:</label><br>                      <!--(The IIE,2025)-->
       <select id="preference" name="Preferred Contact Method" required>
         <option value="">--Select--</option>
         <option value="Email">Email</option>
@@ -88,14 +88,14 @@
         <option value="WhatsApp">WhatsApp</option>
       </select><br><br>
 
-      <label for="message">Your Message:</label><br>
+      <label for="message">Your Message:</label><br>                         <!--(The IIE,2025)-->
       <textarea id="message" name="Message" placeholder="Please type your message here..." rows="5" required></textarea><br><br>
 
       <input type="submit" value="Submit"> <input type="reset" value="Clear">
     </form>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!--FOOTER  -->                        <!--(The IIE,2025)-->
   <footer>
     <p>&copy; 2025 CrownedByAmanda. All rights reserved.</p>
   </footer>

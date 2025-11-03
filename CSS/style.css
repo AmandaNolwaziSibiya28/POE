@@ -91,10 +91,10 @@ input[type="submit"]:hover, input[type="reset"]:hover {
   align-items: center;
   background-color: #333;
   padding: 5px 20px;
-  position: fixed;
+  position: relative;
   width: 100%;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
   background: rgba(255, 255, 255, 0.15); /* transparent background */
   backdrop-filter: blur(10px); /* glass-like blur effect */
 }
@@ -120,7 +120,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 30px;
   margin: 0;
   padding: 0;
 }
@@ -130,6 +130,7 @@ input[type="submit"]:hover, input[type="reset"]:hover {
   color: black;
   font-weight: 600;
   transition: 0.50s ease;
+  font-weight: 600;
 }
 
 .nav-links a:hover {
@@ -583,3 +584,78 @@ body{
             background: #3a5fc9;
             transform: translateY(-3px);
         }
+/* ===== CONTACT US PAGE STYLING ===== */
+.contact-section {
+  background-color: #fff0f5; /* soft pink background */
+  color: #333;
+  padding: 60px 80px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 60px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+}
+
+.contact-section h2 {
+  font-size: 2.2em;
+  color: #b30059;
+  margin-bottom: 20px;
+}
+
+.contact-section h3 {
+  color: #cc0066;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+.contact-section p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.contact-image {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* ===== Home PAGE STYLING ===== */
+.home-section {
+  background-color: #fff0f5; /* soft pink background */
+  color: #333;
+  padding: 60px 80px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 60px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+}
+
+.home-section h2 {
+  font-size: 2.2em;
+  color: #b30059;
+  margin-bottom: 20px;
+}
+
+.home-section h3 {
+  color: #cc0066;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+.home-section p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.home-image {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin-top: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}

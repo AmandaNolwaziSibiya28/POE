@@ -14,11 +14,11 @@
         var service = document.getElementById("service").value;
         var message = document.getElementById("message").value.trim();
 
-        // Regular expressions
+        // Regular expressions                                      //(w3School,2025)
         var emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
         var numberPattern = /^[0-9]+$/;
 
-        // Validation checks
+        // Validation checks                                     <!--(The IIE,2025)-->
         if (name === "") {
           alert("Please enter your full name.");
           return false;
@@ -48,6 +48,8 @@
   </head>
 
   <body>
+    <!--AboutUs Page-->                              <!--(The IIE,2025)-->
+  <section class="contact-section">
     <!-- NAVIGATION BAR -->
     <header>
       <nav class="navbar">
@@ -62,7 +64,7 @@
       </nav>
     </header>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION -->                    <!--(The IIE,2025)-->
     <section class="hero contact-hero">
       <div class="hero-content">
         <h2><span class="highlight">Contact</span> CrownedByAmanda</h2>
@@ -74,7 +76,7 @@
       </div>
     </section>
 
-    <!-- CONTACT DETAILS -->
+    <!-- CONTACT DETAILS -->                             <!--(The IIE,2025)-->
     <section class="contact-info">
       <h2>Get in Touch</h2>
       <div class="info-grid">
@@ -85,7 +87,7 @@
           </p>
         </div>
 
-        <div class="info-block">
+        <div class="info-block">               <!--(The IIE,2025)-->
           <h3>Phone</h3>
           <p>+27 33 548 78457</p>
         </div>
@@ -105,7 +107,7 @@
       </div>
     </section>
 
-    <!-- WORKING HOURS -->
+    <!-- WORKING HOURS -->                           <!--(The IIE,2025)-->
     <section class="working-hours">
       <h2>Working Hours</h2>
       <table border="1" cellpadding="6" cellspacing="0">
@@ -128,7 +130,7 @@
       </table>
     </section>
 
-    <!-- CONTACT FORM -->
+    <!-- CONTACT FORM -->                          <!--(The IIE,2025)-->
     <section class="contact-form">
       <h2>Send Us a Message</h2>
       <p>Please fill in your details and we’ll get back to you as soon as possible.</p>
@@ -141,7 +143,7 @@
         onsubmit="return validateForm()"
       >
         <!-- Full Name -->
-        <label for="name">Full Name:</label>
+        <label for="name">Full Name:</label>               <!--(The IIE,2025)-->
         <input type="text" id="name" name="name" placeholder="Enter your full name" required />
 
         <!-- Email -->
@@ -164,7 +166,7 @@
         </select>
 
         <!-- Checkboxes -->
-        <label>Preferred Contact Method:</label><br />
+        <label>Preferred Contact Method:</label><br />             <!--(The IIE,2025)-->
         <input type="checkbox" id="viaEmail" name="contactMethod" value="Email" /> Email
         <input type="checkbox" id="viaPhone" name="contactMethod" value="Phone" /> Phone Call
         <input type="checkbox" id="viaWhatsApp" name="contactMethod" value="WhatsApp" /> WhatsApp<br /><br />
@@ -179,7 +181,7 @@
       </form>
     </section>
 
-    <!-- GOOGLE MAP -->
+    <!-- GOOGLE MAP -->                <!--(The IIE,2025)-->
     <section class="map">
       <h3>Find Us Here!</h3>
       <iframe
@@ -192,7 +194,7 @@
       ></iframe>
     </section>
 
-    <!-- FOOTER -->
+    <!-- FOOTER -->            <!--(The IIE,2025)-->
     <footer>
       <p>&copy; 2025 CrownedByAmanda. All rights reserved.</p>
     </footer>
