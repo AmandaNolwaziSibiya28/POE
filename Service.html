@@ -1,52 +1,267 @@
 <!DOCTYPE html>
-<html>
-    <header>
-        <title>Services</title>                                                         <!--(The IIE,2025)-->
-                                                                                        <!--(Anthony, 2023)-->
-        </header>
-        <Link href="CSS/style.css" rel="stylesheet" type="text/css"/>
-    <br>
-    <h1>Services offered</h1>           <!--Heading 1-->
-    <body>                                <!--What the organisation offers-->
-  <article class="card">
-    <h1>Crowned by Amanda — Motivation & Services</h1>
-    <ul>
-      <li><strong>Emotional Health & Beauty:</strong> Emotional well-being is as vital to beauty as physical appearance.</li> <br>
+<html lang="en">
+<head>
+  <!-- Page Title -->
+  <title>Services</title>
 
-      <li><strong>Motivation as a Core Offering:</strong> Beyond lifestyle advice and personalised beauty consultations, Crowned by Amanda provides motivation through carefully chosen content—blogs, videos, lessons in encouragement, and interactive live sessions.</li> <br>
+  <!-- Linking External CSS File -->
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+</head>
 
-      <li><strong>Relatable Inspiration:</strong> Motivational words are tailored to everyday challenges, goals, and victories, inspiring self-belief and renewed purpose.</li> <br>
+<body>
+  <!--Navigation Bar-->
+  <header>
+    <nav class="navbar"> <!-- (The IIE, 2025) -->
+      <!-- Website Title -->
+      <h1>CrownedByAmanda</h1>
 
-      <li><strong>Empowering Content:</strong> Stories that resonate with personal journeys, affirmations that reinforce self-worth, and practical techniques to boost self-confidence form the heart of this content.</li> <br>
+      <!-- Navigation Links -->
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Service.html">Services</a></li>
+        <li><a href="Enquiry.html">Enquiry</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <li><strong>Supportive Community:</strong> Through online platforms, the brand fosters a secure and welcoming space that encourages individuality and appreciation.</li> <br>
+  <!--Page Header-->
+  <br><br><br><br>
+  <h1>Our Services</h1>
+  <p>Discover motivation, personalised beauty consultations, and empowering content designed to uplift and inspire.</p>
 
-      <li><strong>Unique Style:</strong> Motivation is delivered in Crowned by Amanda’s own distinctive, uplifting manner.</li> <br>
+  <!-- Services Section -->
+  <div class="service-boxes">
+    <!-- Individual Service Items -->
+    <div class="service">
+      <h2>Emotional Health & Beauty</h2>
+      <p>Emotional well-being is as vital to beauty as physical appearance.</p>
+    </div>
 
-      <li><strong>Beacon of Hope:</strong> Inspirational material encourages people to take risks, enhance daily routines, and face obstacles with courage and optimism.</li> <br>
+    <div class="service">
+      <h2>Motivation as a Core Offering</h2>
+      <p>Motivation is delivered through blogs, videos, lessons, and interactive live sessions.</p>
+    </div>
 
-      <li><strong>Individualised Beauty Consultations:</strong> One-on-one sessions help clients discover looks, routines, and styles that match their personalities and lifestyles, boosting self-esteem and personalising beauty.</li> <br>
+    <div class="service">
+      <h2>Relatable Inspiration</h2>
+      <p>Motivational content tailored to everyday challenges, goals, and victories.</p>
+    </div>
 
-      <li><strong>Online Content:</strong> Blogs, tutorials, and live events offer lifestyle advice, motivational talks, and practical beauty tips.</li> <br>
-    </ul>
-  </article>
-            <h2>One of the most recognised Organisaton hosted a beautyLaunchEvent</h2>      <!--One of the events that hosting a succerful event-->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/lnaJSBS-zVs?si=AXvZ9RrOpQl3lcT-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </body>
-    <nav>               <!--Navigation Links-->
-            <a href= "AboutUs.html">More AboutUs</a>
-            <br>
-            <a href= "home.html">Home page</a>
-            <br>
-            <a href= "Service.html"> More About Our Services</a>
-            <br>
-            <a href= "Enquiry.html"> Enquire with us</a>
-            <br>
-            <a href= "ContactUs.html"> ContactUs for more information</a>
-            <br> 
-        </nav>    
-    <footer>
-        <p>&copy; 2025 CrownedByAmanda. All rights reserved.</p>        <!--A footer that provides extra details at the bottom-->
-    </footer>
+    <div class="service">
+      <h2>Empowering Content</h2>
+      <p>Stories, affirmations, and practical techniques to boost self-confidence.</p>
+    </div>
+
+    <div class="service">
+      <h2>Supportive Community</h2>
+      <p>A secure space that encourages individuality and appreciation.</p>
+    </div>
+
+    <div class="service">
+      <h2>Unique Style</h2>
+      <p>Motivation delivered in Crowned by Amanda’s distinctive, uplifting manner.</p>
+    </div>
+
+    <div class="service">
+      <h2>Beacon of Hope</h2>
+      <p>Encourages people to face obstacles with courage and optimism.</p>
+    </div>
+
+    <div class="service">
+      <h2>Individualised Beauty Consultations</h2>
+      <p>One-on-one sessions to discover looks and routines that match personalities and lifestyles.</p>
+    </div>
+
+    <div class="service">
+      <h2>Online Content</h2>
+      <p>Blogs, tutorials, and live events offering lifestyle advice and practical beauty tips.</p>
+    </div>
+  </div>
+
+  <!-- Dynamic Programs Section -->
+  <div class="content-container"> <!-- (Google Developers, 2022) -->
+    <div class="dynamic-content">
+      <h2>Our Programs</h2>
+
+      <!-- Search Input for Filtering Programs -->
+      <div class="search-container"> <!-- (W3Schools, 2023) -->
+        <input type="search" id="searchInput" placeholder="Search programs and events...">
+        <button id="searchBtn">Search</button>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filters"> <!-- (W3Schools, 2023) -->
+        <button class="filter-btn active" data-filter="all">Services</button>
+      </div>
+
+      <!-- Grid to Display Program Cards -->
+      <div id="contentGrid" class="content-grid">
+        <!-- Dynamic content will be loaded here via JavaScript -->
+      </div>
+
+      <!-- Load More Button -->
+      <button id="loadMoreBtn" class="load-btn">Load More Programs</button>
+    </div>
+  </div>
+
+  <!--Video Section-->
+  <div class="content-container"> <!-- (W3Schools, 2023) -->
+    <div class="video-section">
+      <br>
+      <h2>One of the most recognised Organisations hosted a Beauty Launch Event</h2>
+      <br>
+
+      <!-- Embedded YouTube Video -->
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/lnaJSBS-zVs?si=AXvZ9RrOpQl3lcT-" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <script>
+    // List of Programs and Services              //(W3Schools, 2023)   (The IIE, 2025) 
+    const programs = [ //(MDN Web Docs, 2023)
+      { id: 1, title: "Individualised Beauty Consultations", description: "One-on-one sessions to discover looks and routines that match personalities and lifestyles.", category: "Program" },
+      { id: 2, title: "Online Content", description: "Blogs, tutorials, and live events offering lifestyle advice and practical beauty tips.", category: "Training & Program" },
+      { id: 3, title: "Beacon Of Hope", description: "Encourages people to face obstacles with courage and optimism.", category: "Program" },
+      { id: 4, title: "Unique Style", description: "Motivation delivered in Crowned by Amanda’s distinctive, uplifting manner.", category: "Program" },
+      { id: 5, title: "Supportive Community", description: "A secure space that encourages individuality and appreciation.", category: "Training/Program" },
+      { id: 6, title: "Empowering Content", description: "Stories, affirmations, and practical techniques to boost self-confidence.", category: "Program" },
+      { id: 7, title: "Relatable Inspiration", description: "Motivational content tailored to everyday challenges, goals, and victories.", category: "Program" },
+      { id: 8, title: "Motivation as a Core Offering", description: "Motivation is delivered through blogs, videos, lessons, and interactive live sessions.", category: "Workshop" },
+      { id: 9, title: "Emotional Health & Beauty", description: "Emotional well-being is as vital to beauty as physical appearance.", category: "Training/Program" }
+    ];
+
+    // DOM Elements                         <!---MDN Web Docs,2023-->
+    const contentGrid = document.getElementById('contentGrid');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const loadMoreBtn = document.getElementById('loadMoreBtn');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+
+    //State Variables                                               <!---MDN Web Docs,2023-->
+    let displayedPrograms = 6; // Number of programs initially shown
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    //Initialization
+    document.addEventListener('DOMContentLoaded', function() { //(The IIE, 2025)
+      renderPrograms();
+
+      // Search Functionality
+      searchBtn.addEventListener('click', performSearch);
+      searchInput.addEventListener('keyup', function(e) {
+        if (e.key === 'Enter') {                                    //(FreeCodeCamp,2023)
+          performSearch();
+        }
+      });
+
+      // Load More Button Functionality
+      loadMoreBtn.addEventListener('click', function() {
+        displayedPrograms += 3;
+        renderPrograms();
+      });
+
+      // Filter Buttons Functionality       //(FreeCodeCamp,2023)
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Update Active State
+          filterBtns.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          // Update Filter and Re-render            //(FreeCodeCamp,2023)
+          currentFilter = this.getAttribute('data-filter');
+          renderPrograms();
+        });
+      });
+    });
+
+    // Search Programs                                                (The IIE, 2025) 
+    function performSearch() {
+      currentSearch = searchInput.value.toLowerCase();
+      renderPrograms();
+    }
+
+    //Filter and Search Logic                         (The IIE, 2025) 
+    function getFilteredPrograms() {
+      return programs.filter(program => {
+        const matchesSearch = program.title.toLowerCase().includes(currentSearch) ||
+                              program.description.toLowerCase().includes(currentSearch);
+        const matchesFilter = currentFilter === 'all' || program.category === currentFilter;
+        return matchesSearch && matchesFilter;
+      });
+    }
+
+    //Render Program Cards                                    //(FreeCodeCamp,2023)
+    function renderPrograms() {
+      const filteredPrograms = getFilteredPrograms();
+      const programsToShow = filteredPrograms.slice(0, displayedPrograms);
+
+      // Clear Previous Content
+      contentGrid.innerHTML = '';
+
+      // Display Message if No Results
+      if (programsToShow.length === 0) {
+        contentGrid.innerHTML = '<div class="no-results">No programs found.</div>';
+        loadMoreBtn.style.display = 'none';
+        return;
+      }
+
+      // Create Program Cards                                <!-- (MDN Web Docs, 2023) -->
+      programsToShow.forEach(program => {
+        const card = document.createElement('div');
+        card.className = 'content-card';
+        card.innerHTML = `
+          <div class="card-image" style="background-color: ${getCategoryColor(program.category)}">
+            ${program.title}
+          </div>
+          <div class="card-content">
+            <h3>${program.title}</h3>
+            <p>${program.description}</p>
+            <div class="card-meta">
+              <span>${formatDate(program.date)}</span>                <!-- (MDN Web Docs, 2023) -->
+              <span>${program.category.charAt(0).toUpperCase() + program.category.slice(1)}</span>
+            </div>
+          </div>
+        `;
+        contentGrid.appendChild(card);
+      });
+
+      // Show/Hide "Load More" Button
+      loadMoreBtn.style.display = filteredPrograms.length > displayedPrograms ? 'block' : 'none';
+    }
+
+    // Helper Functions
+    // Assign Colors to Categories
+    function getCategoryColor(category) {
+      const colors = {
+        training: '#3498db',
+        counseling: '#e74c3c',
+        outreach: '#2ecc71',
+        workshop: '#9b59b6'
+      };
+      return colors[category] || '#95a5a6';
+    }
+
+    // Format Dates
+    function formatDate(dateString) {
+      const options = { year: 'numeric', month: 'short', day: 'numeric' };
+      return new Date(dateString).toLocaleDateString('en-US', options);
+    }
+  </script>
+
+  <!--Footer-->
+  <footer>
+    <p>&copy; 2025 CrownedByAmanda. All rights reserved.</p>
+  </footer>
+</body>
 </html>
-  

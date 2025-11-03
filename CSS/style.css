@@ -5,10 +5,84 @@ body {
   color: #333;
   overflow-x: hidden;
 }
-.active {
-  background-color: #04AA6D;
-  color: white;
+/* ===== CONTACT US PAGE STYLING ===== */
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
+
+.contact-section h2 {
+  font-size: 2em;
+  color: #b30059;
+  margin-bottom: 20px;
+}
+
+.contact-section textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-section input[type="submit"],
+.contact-section input[type="reset"] {
+  width: 150px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.contact-section input[type="submit"]:hover {
+  background-color: #ff3385;
+}
+
+.contact-section input[type="reset"]:hover {
+  background-color: #ff80bf;
+}
+.contact-section {
+  background-color: #ffe6f2;
+  padding: 40px;
+  border-radius: 15px;
+  width: 80%;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+  color: #b30059;
+  text-align: center;
+}
+
+label {
+  font-weight: bold;
+  color: #4a0033;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"], input[type="reset"] {
+  background-color: #b30059;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #ff66b3;
+}
+
+
 
 /* ===== Transparent Navigation Bar ===== */
 .navbar {
@@ -16,7 +90,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #333;
-  padding: 15px 50px;
+  padding: 5px 20px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -24,6 +98,11 @@ body {
   background: rgba(255, 255, 255, 0.15); /* transparent background */
   backdrop-filter: blur(10px); /* glass-like blur effect */
 }
+.navbar h1 {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+}
+
 .logo {
   color:white;
   font-size: 24px;
@@ -41,7 +120,7 @@ body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin: 0;
   padding: 0;
 }
@@ -49,7 +128,7 @@ body {
 .nav-links a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  font-weight: 600;
   transition: 0.50s ease;
 }
 
@@ -72,6 +151,11 @@ body {
   color:  #ffd6e8;
   color: #4a0033;
   position: relative;
+}
+.content-hero {
+  background-image:none;
+  background-color: #ffe6f2;
+  color: #4a0033;
 }
 
 /* Slight dark overlay for readability */
@@ -101,6 +185,40 @@ body {
 .hero-content .highlight {
   color: #f8b6d2; /* blush pink */
 }
+/* Card / Article */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    color: #d35d6e;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+/* Event Section */
+.event {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.event h2 {
+    color: #b76e79;
+    margin-bottom: 15px;
+}
+
 
 .hero-content p {
   font-size: 1rem;
@@ -113,8 +231,12 @@ footer {
   background-color: #f8b6d2;
   color: white;
   text-align: center;
-  padding: 15px 0;
+  padding: 10px 0;
   font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 * {
   margin: 0;
@@ -182,3 +304,282 @@ body{
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
+/* ===== Service PAGE STYLING ===== */
+.service-section {
+  background-color: #fff0f5; /* soft pink background */
+  color: #333;
+  padding: 60px 80px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 60px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.4);
+}
+
+.service-section h2 {
+  font-size: 2.2em;
+  color: #b30059;
+  margin-bottom: 20px;
+}
+
+.service-section h3 {
+  color: #cc0066;
+  margin-top: 40px;
+  font-size: 1.5em;
+}
+
+.service-section p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+    /* Reset default browser styles */
+    * {     /*(W3Schools, 2023)*/
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Navigation container */
+    nav {   /*(W3Schools, 2023)*/
+        background-color: pink;
+        padding: 20px 0;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Flexbox centering */
+    nav ul {    /*(The IIE, 2025)*/
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        list-style: none;
+    }
+
+    /* Navigation links */
+    nav ul li {     /*(W3Schools, 2023)*/
+        margin: 0 15px;
+    }
+
+    nav ul li a {      /*(W3Schools, 2023)*/
+        color: rgba(83, 22, 22, 0.675);
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px 12px;
+        transition: background 0.3s;
+        border-radius: 4px;
+    }
+
+    nav ul li a:hover {     /*(W3Schools, 2023)*/
+        background-color: #555;
+        border-radius: 4px;
+         transform: translateY(-2px);
+    }
+
+    /* Main content */
+        main {  /*/*(W3Schools, 2023)*/
+            flex: 1;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* Content container */
+        .content-container {    /*(CSS-Tricks, 2022).*/
+            background-color: rgba(203, 83, 155, 0.873);
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   
+        }
+
+        /* Service boxes */
+        .service-boxes {    /*(MDN Web Docs, 2023).*/
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .service {          /*(MDN Web Docs, 2023).*/
+            background: #f8b6d2;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service:hover {    /*(MDN Web Docs, 2023).*/
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .service h2 {       /*(MDN Web Docs, 2023).*/
+            color: #BBA032;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        /* Video section */
+        .video-section {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        iframe {    /*(The IIE, 2025*/
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Dynamic Content Styles */
+        .dynamic-content {
+            margin-top: 2rem;
+        }
+
+        .search-container {     /*(CSS-Tricks, 2021).*/
+            margin-bottom: 1.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .search-container input {   /*(CSS-Tricks, 2021).*/
+            flex: 1;
+            padding: 0.9rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .search-container input:focus { /* (FreeCodeCamp, 2023). */
+            border-color: black;
+            box-shadow: 0 0 0 3px rgba(65, 105, 225, 0.2);
+            outline: none;
+        }
+
+        .search-container button {  /* (FreeCodeCamp, 2023). */
+            padding: 0.9rem 1.5rem;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .search-container button:hover {    /* (FreeCodeCamp, 2023). */
+            background: yellow;
+            transform: translateY(-2px);
+        }
+
+        .content-grid {     /*(CSS-Tricks, 2022).*/
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .content-card {     /*(CSS-Tricks, 2022).*/
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .content-card:hover {   /*(CSS-Tricks, 2022).*/
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-image {   /*(Google Developers, 2022).*/
+            height: 160px;
+            background-color: orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .card-content { /*(MDN Web Docs, 2023). */
+            padding: 1.2rem;
+        }
+
+        .card-content h3 {  /*(MDN Web Docs, 2023). */
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .card-content p {   /*(MDN Web Docs, 2023). */
+            color: #7f8c8d;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .card-meta {    /*(MDN Web Docs, 2023). */
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #95a5a6;
+        }
+
+        .no-results {   /*(MDN Web Docs, 2023). */
+            text-align: center;
+            padding: 2rem;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .loading {  /*(Google Developers, 2022).*/
+            text-align: center;
+            padding: 1rem;
+            color: red;
+        }
+
+        .filters {  /*(W3Schools, 2023)*/
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {   /*//(MDN Web Docs, 2023).*/
+            padding: 0.5rem 1rem;
+            background: #ecf0f1;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-btn.active {    /*(W3Schools, 2023*/
+            background: purple;
+            color: white;
+        }
+
+        .load-btn {     /*(Google Developers, 2022).*/
+            display: block;
+            margin: 2rem auto 0;
+            padding: 0.9rem 2rem;
+            background: royalblue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .load-btn:hover {   /*(Google Developers, 2022).*/
+            background: #3a5fc9;
+            transform: translateY(-3px);
+        }

@@ -1,61 +1,103 @@
- <!DOCTYPE html>
-<html>
-<header>
-    <title>Enquiry</title>                                                      <!--(The IIE,2025)-->
-</header>  
-<Link href="CSS/style.css" rel="stylesheet" type="text/css"/>                                                                     <!--(BeautyVibes, 2023)-->        
-                                                                                <!--(W3Schools,n.d.)-->                                                                                                                                                                                                             
-<body>                                                                         <!--Enquiry Form, which shows the form structure as well-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Enquiry | CrownedByAmanda</title>
+  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+  <script>
+    // ===== FORM VALIDATION =====
+    function validateForm(event) {
+      event.preventDefault(); // prevent form from submitting automatically
+
+      let name = document.getElementById('fullName').value.trim();
+      let email = document.getElementById('email').value.trim();
+      let phone = document.getElementById('phone').value.trim();
+      let message = document.getElementById('message').value.trim();
+
+      // Name validation
+      if (name === "") {
+        alert("Please enter your full name.");
+        return false;
+      }
+
+      // Email validation
+      if (!email.match(emailPattern)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+
+      // Phone validation (digits only)
+      if (!phone.match(phonePattern)) {
+        alert("Please enter a valid phone number (digits only).");
+        return false;
+      }
+
+      // Message validation
+      if (message === "") {
+        alert("Please enter your message.");
+        return false;
+      }
+
+      // If all is valid
+      alert("Thank you for your enquiry! Your form has been submitted successfully.");
+      document.getElementById('enquiryForm').submit();
+    }
+  </script>
+</head>
+
+<body>
+  <!-- ===== NAVIGATION BAR ===== -->
+  <header>
+    <nav class="navbar">
+      <h1>CrownedByAmanda</h1>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="Service.html">Services</a></li>
+        <li><a href="Enquiry.html" class="active">Enquiry</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== ENQUIRY SECTION ===== -->
+  <section class="contact-section">
     <h1>Please fill in the form below to request more information or book a consultation.</h1>
-    <h2>Enquiry Form</h2>                                                                <!---Label lets us tell the user what we want them to enter-->
-                                                                                         <!--the for attribute tells the website which input to relate it to-->
-    <form action = "www.crownedbyamanda.com"method = "post" enctype="text/plain">               <!--Where the code will be sent-->
+    <h2>Enquiry Form</h2>
 
-<label for = "Full Name">Full Name:</label> <br>                                        <!--Users will fill in their full names-->
-<input type = "text" id = "Name" name = "Enter your full Name" required><br>
+    <form id="enquiryForm" action="mailto:info@crownedbyamanda.co.za" method="post" enctype="text/plain" onsubmit="validateForm(event)">
+      <label for="fullName">Full Name:</label><br>
+      <input type="text" id="fullName" name="Full Name" placeholder="Enter your full name" required><br><br>
 
-<label for = "Email Address">Last Name: </label> <br>                                 <!--Users will fill in their Email Address and space is provided-->
-<input type = "text" id = "Email Address" name = "Email Address" required> <br>
-                                                                                        <!--name and id should match the label "for", and the type is what we want the user to enter-->
- <h2>Please select Service/Services you are interested in</h2>
-                                                                                         <!--for a checkbox, we change "Type" for the input. There are mutiple you can choose from-->
-    <label for ="Consultations">Beauty Consultation</label><br>
-     <input name = "Consultations" id = "Consultations" type = "checkbox"  value = "Beauty Consultation" required> <br>
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="Email" placeholder="Enter your email" required><br><br>
 
-    <label for ="lifestyle">Lifestyle & Self-care Guidance</label><br>
-            <input name = "lifestyle" id = "lifestyle" type = "checkbox"  value = "Lifestyle & Self-care Guidance" required> <br>
+      <label for="phone">Phone Number:</label><br>
+      <input type="text" id="phone" name="Phone" placeholder="Enter your phone number" required><br><br>
 
-            
-    <label for ="Events">Workshop/Live Events</label><br>
-            <input name = "Events" id = "Events" type = "checkbox"  value = "Workshop/Live Events" required> <br>
+      <h3>Please select the service(s) you are interested in:</h3>
+      <label><input type="checkbox" name="Service" value="Beauty Consultation"> Beauty Consultation</label><br>
+      <label><input type="checkbox" name="Service" value="Lifestyle & Self-care Guidance"> Lifestyle & Self-care Guidance</label><br>
+      <label><input type="checkbox" name="Service" value="Workshop/Live Events"> Workshop / Live Events</label><br>
+      <label><input type="checkbox" name="Service" value="Motivational Speeches"> Motivational Speeches</label><br><br>
 
+      <label for="preference">Preferred Contact Method:</label><br>
+      <select id="preference" name="Preferred Contact Method" required>
+        <option value="">--Select--</option>
+        <option value="Email">Email</option>
+        <option value="Phone">Phone</option>
+        <option value="WhatsApp">WhatsApp</option>
+      </select><br><br>
 
-    <label for ="Motivation ">Motivation speeches</label><br>
-            <input name = "Motivation " id = "Motivation" type = "checkbox"  value = "Motivation" required> <br>
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="Message" placeholder="Please type your message here..." rows="5" required></textarea><br><br>
 
-    <label for ="Message">Your Message:</label> <br>                       <!--textarea gives a bigger box to type in. Remember that the id and name must be the same as the "for"-->
-             <textarea message = "Message " id = "Message" placeholder="Please type your message here ..." rows="5" required></textarea> <br>  <!--(OpenAI,2024)-->       
-    <br>                                    <!--rows = height (how many lines tall) placeholder = faded text that disappears when the user types and it also helps the user know what to type in that provided space.-->
-   
-    <body style="background-image: url('Images/MILESTONE/Diversity\ Image.jpg'); color: white;"></body>         <!--BackgroundImage-->
-    <br>
-<input type = "submit" value = "Submit">   <input type = "reset"  value = "Clear">             <!--Submit Button and Clear/Reset Button-->
-<br>
-<nav>               <!--Navigation Links-->
-            <a href= "AboutUs.html">More AboutUs</a>
-            <br>
-            <a href= "home.html">Home page</a>
-            <br>
-            <a href= "Service.html"> More About Our Services</a>
-            <br>
-            <a href= "Enquiry.html"> Enquire with us</a>
-            <br>
-            <a href= "ContactUs.html"> ContactUs for more information</a>
-            <br> 
-        </nav>    
-</form>
+      <input type="submit" value="Submit"> <input type="reset" value="Clear">
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 CrownedByAmanda. All rights reserved.</p>
+  </footer>
 </body>
-<footer>
-<p>&copy; 2025 CrownedByAmanda. All rights reserved.</p>        <!--A footer that provides extra details at the bottom-->
-    </footer>
-</html>                                 <!--Closing all opened tags-->
+</html>
